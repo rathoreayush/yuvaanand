@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="until.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuva Anand || Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        /* background color and styling into head item*/
+        header {
+            background-color: black;
+        }
+
+        .banner {
+            background-image: url(./image/banner.gif);
+            height: 20vw;
+            min-height: 100px;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: 40%;
+            background-attachment: fixed;
+        }
+
+        /* background color to the top navigation bar*/
+        .nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            ;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .nav a:hover {
+            background-color: #ddd;
+            color: red;
+        }
+
+        /* Add an active class to highlight the current page */
+        .nav a.active {
+            background-color: green;
+            color: white;
+        }
+
+        /* Hide the link that should open and close the topnav on small screens */
+        .nav .icon {
+            display: none;
+        }
+
+
+        footer {
+            background-color: rgba(0, 255, 255, 0.158);
+            margin-top: 20px;
+        }
+
+        footer .footeradress address {
+            padding: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .footerlist ul {
+            justify-content: space-around;
+            display: flex;
+        }
+
+        .footerlist ul li {
+            list-style: none;
+        }
+
+        .footerlist ul li a {
+            text-decoration: none;
+        }
+
+        .head-item {
+            border: 2px solid black;
+
+            background-color: rgba(0, 0, 0, 0.158);
+            height: 110px;
+        }
+
+        .head-item h2 {
+            text-align: center;
+            transform: scale(1.5);
+        }
+
+        .head-item h5 {
+            font-size: 10px;
+            right: 50px;
+            position: absolute;
+            top: 40px;
+        }
+
+        .right-side {
+            margin-top: 20px;
+            position: relative;
+            display: inline;
+        }
+
+        .right-side a {
+            text-decoration: none;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px 15px;
+            margin: 20px;
+            color: black;
+            transition: 0.5s;
+        }
+
+        .right-side a:hover {
+            background-color: black;
+            color: white
+        }
+
+        .nav-bar {
+            /* height: 50px; */
+            position: sticky;
+            width: 100%;
+            align-items: center;
+            background-color: #333;
+
+        }
+
+        .nav-bar nav {
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .nav-bar nav a {
+            padding: 14px 16px;
+            color: #fff;
+            position: relative;
+
+            text-decoration: none;
+            align-items: center;
+        }
+
+        .nav-bar nav a:hover {
+            color: brown;
+            text-decoration: underline;
+            background-color: #ddd;
+        }
+
+        .row {
+            border: 2px solid grey;
+            margin-bottom: -20px;
+            text-align: center;
+        }
+
+
+        .icon {
+            text-align: center;
+        }
+
+        .icon a {
+            margin: 0 15px;
+        }
+
+        @media screen and (max-width:750px) {
+            .nav a:not(:first-child) {
+                display: none;
+            }
+
+            .nav a.icon {
+                float: right;
+                display: block;
+            }
+
+            @media screen and (max-width: 750px) {
+                .nav.responsive {
+                    position: relative;
+                }
+
+                .nav.responsive a.icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                .nav.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+            }
+
+            .banner {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--heading downwardside-->
+    <header>
+        <div class="banner"></div>
+    </header>
+    <!--navigation bard downside-->
+    <!--Nevigation Bar In Downward-->
+
+    <div class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="#" class="active">Gallery</a>
+        <a href="events.html">Event</a>
+        <a href="volunteering.html">Join Us</a>
+        <a href="contact_us.html">Contact Us</a>
+        <a href="donate.html" class="flex-align-right">Donate Now</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="main-container">
+        <div class="container">
+            <div class="row">
+
+                <h1>Photo Gallery</h1>
+
+                <p>
+                    "Our photo gallery showcases dome of the best captures on-field. These exclusive project albums will
+                    give you a glimpse of Yuva Anand work as we <br>
+                    engage with entire communities,to improve the lives and livelihood.""
+                </p>
+            </div>
+            <!--add image downward side-->
+
+        </div>
+
+    </div>
+
+
+    <!--footer downward side-->
+    <footer>
+        <div class="container">
+            <!--Adress-->
+            <div class="footeradress">
+                <h3>Contact Us</h3>
+                <Address>
+                    Yuva Anand Sarvjan Kalyan Samiti <br>Reg.Under Society Act 2101860 <br>Reg.No:- 664/2015-16 <br>
+                    Dubha,Sakra,Muzaffarpur, Bihar <br>
+                    Call Us:-58384585338 <br>
+                    Mail;- mail@yuvaanand
+                </Address>
+            </div>
+            <hr>
+            <!--some usefull link dowanward side-->
+            <div class="footerlist">
+                <h3>Usefull Links</h3>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="contact_us.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy & Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <!--social navigation list downward-->
+            <h3 id="touch">Keep in touch</h3>
+            <br>
+            <div class="icon">
+                <a href="https://www.facebook.com/Madhukarkumarshroti" style="color: #4267B2;text-decoration: none;"><i
+                        class="fa fa-facebook" style="font-size:24px;"></i></a>
+                <a href="https://twitter.com/madhukarshroti" style="color:#1DA1F2;text-decoration: none;"><i
+                        class="fa fa-twitter" style="font-size:24px;"></i></a>
+                <a href="https://www.instagram.com/Madhukarshroti" style="color:#8a3ab9;text-decoration: none;"><i
+                        class="fa fa-instagram" style="font-size:24px; height:30px;"></i></a>
+                <a href="https://www.youtube.com/channel/UC2Ea1bMHsxWgFNA-MyZjqeA"
+                    style="color:	#FF0000;text-decoration: none;"><i class="fa fa-youtube"
+                        style="font-size:24px"></i></a>
+            </div>
+            </ul>
+            <br>
+            <!--copyright section downwardside-->
+            <div class="copy-right">
+                <h4 style="margin-left: 20%;">
+                    &copy 2021 Yuva Anand. All rights reserved. Developed & Managed by:The Puzzels
+                </h4>
+            </div>
+        </div>
+
+
+    </footer>
+    </div>
+
+    </footer>
+    <!--When the screen is less than 750 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
+</body>
+
+</html>
